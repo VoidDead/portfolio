@@ -7,49 +7,73 @@
 	</head>
 	
 	<body>
-		<ul class='navigation'>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="lab1.html">Lab 1</a></li>
-		</ul>
-		
-		<h1 id="about">About:</h1>
-		<p id="aboutParagraph">
-			I am Keylan Hin-Lung Edward Jensen, a human being and student of Brigham Young University. I exist, and my favorite color is blue.
-		</p>
-		
-		<hr/>
-		
-		<h1>Projects:</h1>
-		<p id="projects">
-			<ol>
-				<li>Mobile Grey-Water Management System</li>
-				<li>HaulGauge After-Production Development</li>
-				<li>Activity D7: Development Workflow with Git</li>
-			</ol>
-		</p>
-		
-		<hr/>
-		
-		<h1>Experience:</h1>
-		<p id="experience">
-			<ul>
-				<li>1 Year As Product Development Engineer Intern - Hall Labs</li>
+		<div class='menu'>
+			<ul class='navigation'>
+				<li><a href="index.html">Home</a></li>
+				<li class='dropdown' id='longDropdown'><span>Labs ▾</span>
+					<ul class='labs-menu'>
+						<li><a href='#'>Lab 1</a></li>
+						<li><a href='#'>Lab 2</a></li>
+						<li><a href='#'>Lab 3</a></li>
+						<li><a href='#'>Lab 4</a></li>
+					</ul>
+				</li>
 			</ul>
-		</p>
+		</div>
 		
-		<hr/>
+		<div class='content'>
+			<div id='about'>
+				<h1 id="aboutTitle">About:</h1>
+				<p id="aboutParagraph">
+					I am Keylan Hin-Lung Edward Jensen, a human being and student of Brigham Young University. I exist, and my favorite color is blue.
+				</p>
+				
+				<hr/>
+			</div>
+			<div id='qualifications'>
+				<div id='projects'>
+					<h1>Projects:</h1>
+					<p>
+						<ol>
+							<li>Mobile Grey-Water Management System</li>
+							<li>HaulGauge After-Production Development</li>
+							<li>Activity D7: Development Workflow with Git</li>
+						</ol>
+					</p>
+				
+					<hr/>
+				</div>
+				<div id='experience'>
+					<h1>Experience:</h1>
+					<p>
+						<ul>
+							<li>1 Year As Product Development Engineer Intern - Hall Labs</li>
+						</ul>
+					</p>
+			
+					<hr/>
+				</div>
+			</div>
+			<div id='contact'>
+				<h1>Contact:</h1>
+				<p>
+					<h2>Email:</h2>
+					<ul>
+						<li>keylan118@gmail.com</li>
+						<li>khej3@byu.net</li>
+					</ul>
+					<h2>Github:</h2>
+					<ul>
+						<li><a class='button' href="https://github.com/VoidDead">https://github.com/VoidDead</a></li>
+					</ul>
+				</p>
+				<hr/>
+			</div>
+			
+		</div>
 		
-		<h1>Contact:</h1>
-		<p id="contact">
-			<h2>Email:</h2>
-			<ul>
-				<li>keylan118@gmail.com</li>
-				<li>khej3@byu.net</li>
-			</ul>
-			<h2>Github:</h2>
-			<ul>
-				<li><a class='button' href="https://github.com/VoidDead">https://github.com/VoidDead</a></li>
-			</ul>
-		</p>
+		<div class='footer'>
+			<p id='footer'>This is a footer, I guess.</p>
+		</div>
 	</body>
 </html>

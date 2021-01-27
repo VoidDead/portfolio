@@ -1,5 +1,5 @@
 body {
-	color: #EEEEEE;
+	color: #EEE;
 	background-color: #414141;
 }
 
@@ -10,8 +10,20 @@ a {
 	background-color: #313131;
 }
 
-ol, ul, p {
+p {
 	background-color: #313131;
+	padding-left: 20px;
+	padding-right:20px;
+}
+.content ol {
+	background-color: #313131;
+	padding-left: 40px;
+	padding-right: 20px;
+}
+.content ul {
+	background-color: #313131;
+	padding-left: 40px;
+	padding-right: 20px;
 }
 
 
@@ -53,8 +65,8 @@ h1 {
 	width: 100%;
 	height:auto;
 	position: fixed;
-	overflow: hidden;
 	border: 1px solid #555;
+	background-color: #313131;
 }
 .navgation a {
 	display: block;
@@ -70,6 +82,9 @@ h1 {
 	border-right: 1px solid #555;
 	padding:10px;
 }
+.navigation li:first-child {
+	border-right:none;
+}
 /*.navigation li:last-child {
 	border-right: none;
 }*/
@@ -82,7 +97,7 @@ body {
 }
 
 
-#about {
+#aboutTitle {
 	margin-left:50px;
 	margin-top:50px;
 }
@@ -100,4 +115,93 @@ ul {
 
 ol {
 	list-style-type: lower-roman;
+}
+
+
+.footer, .content, .menu {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.footer {
+	text-align:center;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color:#313131;
+}
+
+.content {
+	display: flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+	flex-direction:row;
+}
+
+#about {
+	order: 0;
+	flex:1;
+	border: 2px solid #363;
+}
+#qualifications {
+	order: 1;
+	flex:1;
+	border: 2px solid #363;
+}
+#contact {
+	order: 3;
+	flex:1;
+	border: 2px solid #363;
+}
+
+#footer {
+	width:100%;
+	background-color:transparent;
+}
+
+.dropdown {
+	position: relative;
+	background-color: #313131;
+	border-left: 1px solid #555;
+}
+.dropdown > span {
+	cursor: pointer;
+	position: relative;
+	z-index: 2;
+}
+.labs-menu {
+	display:none;
+}
+.dropdown:hover .labs-menu {
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	padding-top: 60px;
+	
+	position: absolute;
+	top: -19px;
+	left: -41px;
+	z-index: 1;
+}
+.labs-menu ul {
+	padding-left: 0;
+	padding-right: 0;
+}
+.labs-menu li {
+	list-style: none;
+	border: 1px solid #555;
+	/*width: 50px;*/
+	background-color: #313131;
+	
+	padding: 10px 10px 10px 10px;
+	margin: 0px;
+}
+.labs-meni li:last-of-type {
+	border-bottom: none;
+}
+#longDropdown {
+	padding-left: 20px;
+	padding-right: 20px;
 }
